@@ -1,0 +1,14 @@
+# venv
+.venv/
+venv/
+
+# python
+__pycache__/
+*.pyc
+
+# streamlit
+.streamlit/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
