@@ -29,6 +29,77 @@
     </p>
   </div>
 
+  <section id="dataset" style="margin-top: 3rem;">
+  <h2>📊 Dataset Description</h2>
+
+  <p>
+    The dataset used in this project is sourced from
+    <strong>Spotify Charts</strong>, specifically the
+    <strong>Pakistan Daily Top 200 Songs</strong> rankings.
+    The data represents daily streaming performance of songs within Pakistan
+    as reported by Spotify.
+  </p>
+
+  <h3>📍 Dataset Scope</h3>
+  <ul>
+    <li><strong>Region:</strong> Pakistan</li>
+    <li><strong>Chart Type:</strong> Daily Top 200 Songs</li>
+    <li><strong>Time Period:</strong> December 2025</li>
+    <li><strong>Granularity:</strong> Song-level, per day</li>
+  </ul>
+
+  <h3>🧾 Dataset Attributes</h3>
+  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+    <thead style="background-color: #f0f0f0;">
+      <tr>
+        <th>Column</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Date</strong></td>
+        <td>Date of the Spotify chart (extracted from the filename)</td>
+      </tr>
+      <tr>
+        <td><strong>Position</strong></td>
+        <td>Ranking of the song on Spotify Pakistan (1–200)</td>
+      </tr>
+      <tr>
+        <td><strong>Track</strong></td>
+        <td>Name of the song</td>
+      </tr>
+      <tr>
+        <td><strong>Artist</strong></td>
+        <td>Artist(s) who performed the track</td>
+      </tr>
+      <tr>
+        <td><strong>Streams</strong></td>
+        <td>Number of streams recorded for that song on the given day</td>
+      </tr>
+      <tr>
+        <td><strong>URL</strong></td>
+        <td>Direct Spotify link to the track</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>⚙️ Data Collection & Processing</h3>
+  <p>
+    The data was manually downloaded as CSV files from Spotify Charts to ensure
+    reliability and consistency. Multiple daily files were merged using
+    <strong>Python (Pandas)</strong>. Column names were normalized, data types
+    were cleaned, and missing values were handled prior to visualization.
+  </p>
+
+  <h3>🎯 Intended Use</h3>
+  <p>
+    This dataset enables interactive exploration of music trends in Pakistan,
+    allowing users to analyze top-performing tracks and artists, observe
+    popularity changes over time, and gain insights into streaming behavior.
+  </p>
+</section>
+
   <div class="card">
     <h2>Tools Used</h2>
     <ul>
